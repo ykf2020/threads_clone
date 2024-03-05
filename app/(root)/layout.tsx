@@ -22,10 +22,10 @@ export default function RootLayout({
 }) {
   return (
     <ClerkProvider>
-      <html lang="en">
+      <html lang="en" suppressHydrationWarning={true}>
         <body className={`${inter.className} bg-dark-1`}>
           <Topbar/>
-          <main>
+          <main className="flex flex-row">
             <LeftSidebar/>
               <section className="main-container">
                 <div className="w-full max-w-4xl">
